@@ -1,0 +1,65 @@
+h1 {
+    text-align: center;
+}
+
+.top-container {
+    text-align: center;    
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 10px;
+}
+
+.board div {
+    width: 200x;
+    height: 200px;
+    
+    border: 5px solid darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    cursor: pointer;
+}
+
+.playerone {
+    border-radius: 20px;
+}
+
+.playertwo {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display: inline-block;
+  }
+
+  .playertwo:before, .x:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transform-origin: center;
+  }
+
+  .playertwo:before {
+    transform: rotate(45deg);
+  }
+
+  .playertwo:after {
+    transform: rotate(-45deg);
+  }
+
+#current-playerone {
+  color: red;
+}
+
+#current-playertwo {
+  color: red;
+}
+
+.winning-cell {
+  background-color: lime;
+}

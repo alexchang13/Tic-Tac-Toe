@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic Tac Toe Game</h1>
+        <div class = "row top-container">
+            <div class = "col-md-4 text-start">
+                <h3>
+                    <div id="playerone">Player 1 is X</div>
+                    <div id = current-playerone></div>
+                </h3>
+            </div>
+            <div class = "col-md-4 text-center">
+                <div id="score-display">
+                    <h2>Score</h2>
+                    <h2><span id="playeronescore"></span>-<span id="playertwoscore"></span></h2>
+                </div>
+                <div id = "result">
+                    <h2>Result: <span id="result-display"></span></h2>
+                </div>  
+            </div>
+            <div class = "col-md-4 text-end">
+                <h3>
+                    <div id="playertwo">Player 2 is O</div>        
+                    <div id = current-playertwo></div>
+                </h3>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-auto text-center">
+                <div class="board" id="board">
+                    <div class="board-item" id="cell0"></div>
+                    <div class="board-item" id="cell1" ></div>
+                    <div class="board-item" id="cell2"></div>
+                    <div class="board-item" id="cell3"></div>
+                    <div class="board-item" id="cell4"></div>
+                    <div class="board-item" id="cell5"></div>
+                    <div class="board-item" id="cell6"></div>
+                    <div class="board-item" id="cell7"></div>
+                    <div class="board-item" id="cell8"></div>
+                </div>
+                <br>
+                <button type ="button" class="btn btn-primary btn-lg" id="clear-board">Reset Game</button> 
+                <button type ="button" class="btn btn-danger btn-lg" id="reset-score">Reset Score</button> 
+            </div>
+        </div> 
+    </div>       
+<script src ="jquery-3.7.0.min.js"></script>
+<script src ="script.js"></script>
+</body>
+</html>
